@@ -7,7 +7,7 @@ import Dashboard from './components/dashboard.vue';
 const router = VueRouter.createRouter({
     history: VueRouter.createWebHashHistory(),
     routes: [{
-        path: "/test",
+        path: "/",
         component: Dashboard,
     }, ],
 });

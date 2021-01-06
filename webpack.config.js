@@ -53,6 +53,6 @@ module.exports = {
     optimization: {
         usedExports: true,
         sideEffects: false,
-        minimize: true,
+        minimize: false,
     }
 };
