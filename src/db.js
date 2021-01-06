@@ -14,4 +14,19 @@ DBApi.prototype.getUsers = function(callback) {
     );
 };
 
+DBApi.prototype.getUser = function(id, callback) {
+    fetch(`${endpoint}users?id=${id}`, {
+        method: 'GET',
+    }).then(response => response.json()).then(
+        (data) => { callback(data[0] || {}); }
+    );
+};
+
+DBApi.prototype.getPosts = function(id, callback) {
+    fetch(`${endpoint}posts?userId=${id}`, { method: 'GET' })
+        .then((response) => { return response.json() }).then((data) => {
+            callback(data);
+        });
+};
+
 export { DBApi };

@@ -2,7 +2,7 @@
   <div class="user-list-wrapper">
     <div v-if="users.length > 0">
       <div v-for="user in users" v-bind:key="user.id">
-        <user :user-data="user"></user>
+        <user :user-data="user" :less="true"></user>
       </div>
     </div>
     <div v-else>Loading users...</div>
