@@ -1,4 +1,15 @@
-import { createApp } from 'Vue';
+import * as Vue from 'Vue';
+import * as VueRouter from 'VueRouter';
 import App from './app.vue';
+import Dashboard from './components/dashboard.vue';
 
-createApp(App).mount('#vueApp');
+
+const router = VueRouter.createRouter({
+    history: VueRouter.createWebHashHistory(),
+    routes: [{
+        path: "/test",
+        component: Dashboard,
+    }, ],
+});
+
+const app = Vue.createApp(App).use(router).mount('#vueApp');

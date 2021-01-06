@@ -46,6 +46,7 @@ module.exports = {
     resolve: {
         alias: {
             Vue: path.resolve(__dirname, 'node_modules/vue/dist/vue.esm-bundler.js'),
+            VueRouter: path.resolve(__dirname, 'node_modules/vue-router/dist/vue-router.esm-bundler.js'),
         }
     },
     plugins: [new VueLoaderPlugin(), ],

@@ -1,17 +1,12 @@
 <template>
   <div>
-    TEST
-    user
+      dash
   </div>
 </template>
 
 <script>
-export default {
-};
+export default {};
 </script>
 
 <style scoped>
-* {
-  outline: 1px solid red;
-}
 </style>

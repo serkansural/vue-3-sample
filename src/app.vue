@@ -1,18 +1,23 @@
 <template>
-  <div class="test">APP ROOT {{ reactiveData.test }}</div>
+  <div>
+    <header>
+      <router-link to="/test"> TEst</router-link>
+    </header>
+    <article>
+        <router-view></router-view>
+    </article>
+    <footer></footer>
+  </div>
 </template>
 
 <script>
-import { reactive } from "vue";
 
 export default {
+  components: {},
   data() {
-    return {
-      reactiveData: rData,
-    };
+    return {};
   },
 };
-
 </script>
 
 <style>
@@ -20,6 +25,7 @@ html,
 body {
   margin: 0;
   padding: 0;
+  background-color: #e9e5df;
 }
 
 div {
